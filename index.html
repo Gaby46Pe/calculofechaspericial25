@@ -10,26 +10,26 @@
     <div class="container">
         <h1>Calculadora de Días Hábiles</h1>
         <form id="days-form">
-            <label for="start-date">Fecha Inicial (dd/mm/año):</label>
-            <input type="text" id="start-date" placeholder="dd/mm/aaaa" required>
+            <label for="start-date"><strong>Fecha Inicial (dd/mm/año):</strong></label>
+            <input type="text" id="start-date" class="narrow" placeholder="dd/mm/aaaa" required>
 
-            <label for="jurisdiction">Fueros:</label>
-            <select id="jurisdiction" required>
-                <option value="PENAL" style="color: red;">PENAL</option>
-                <option value="CIVIL" style="color: blue;">CIVIL</option>
-                <option value="COMERCIAL" style="color: green;">COMERCIAL</option>
-                <option value="LABORAL" style="color: orange;">LABORAL</option>
-                <option value="CONTENCIOSO ADMINISTRATIVO" style="color: purple;">CONTENCIOSO ADMINISTRATIVO</option>
-                <option value="OTRO" style="color: brown;">OTRO</option>
+            <label for="jurisdiction"><strong>Fueros:</strong></label>
+            <select id="jurisdiction" class="narrow" required>
+                <option value="PENAL" style="background-color: red; color: white;">PENAL</option>
+                <option value="CIVIL" style="background-color: blue; color: white;">CIVIL</option>
+                <option value="COMERCIAL" style="background-color: green; color: white;">COMERCIAL</option>
+                <option value="LABORAL" style="background-color: orange; color: white;">LABORAL</option>
+                <option value="CONTENCIOSO ADMINISTRATIVO" style="background-color: purple; color: white;">CONTENCIOSO ADMINISTRATIVO</option>
+                <option value="OTRO" style="background-color: brown; color: white;">OTRO</option>
             </select>
 
-            <label for="days-count">Cantidad de Días:</label>
-            <input type="number" id="days-count" min="1" required>
+            <label for="days-count"><strong>Cantidad de Días:</strong></label>
+            <input type="number" id="days-count" class="narrow" min="1" required>
 
-            <button type="button" id="calculate">Calcular Fecha</button>
-            <button type="button" id="clear">Limpiar</button>
+            <button type="button" id="calculate" class="small-button">Calcular Fecha</button>
+            <button type="button" id="clear" class="small-button red-button">Limpiar</button>
         </form>
-        <div id="result"></div>
+        <div id="result"><strong>Fecha Resultado:</strong> <span id="final-date"></span></div>
     </div>
     <script src="script.js"></script>
 </body>
