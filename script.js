@@ -12,27 +12,3 @@ document.getElementById('calculate').addEventListener('click', function () {
     if (isNaN(startDate.getTime()) || isNaN(daysCount)) {
         alert("Por favor, ingresa una fecha y una cantidad de días válidas.");
         return;
-    }
-
-    let businessDaysCount = 0;
-    let currentDate = startDate;
-
-    // Buscar el siguiente día hábil
-    while (!isBusinessDay(currentDate)) {
-        currentDate.setDate(currentDate.getDate() + 1);
-    }
-
-    // Contar los días hábiles
-    while (businessDaysCount < daysCount) {
-        currentDate.setDate(currentDate.getDate() + 1);
-        if (isBusinessDay(currentDate)) {
-            businessDaysCount++;
-        }
-    }
-
-    const resultDate = currentDate.toLocaleDateString('es-AR');
-    document.getElementById('result').innerText = `Fecha Resultado: ${resultDate}`;
-});
-
-document.getElementById('clear').addEventListener('click', function () {
-    document.getElementBy
