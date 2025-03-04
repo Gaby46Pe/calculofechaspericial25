@@ -5,10 +5,4 @@ const holidays = [
 ].map(date => new Date(date.split('/').reverse().join('-')));
 
 document.getElementById('calculate').addEventListener('click', function () {
-    const startDateInput = document.getElementById('start-date').value;
-    const daysCount = parseInt(document.getElementById('days-count').value, 10);
-    const startDate = new Date(startDateInput.split('/').reverse().join('-'));
-
-    if (isNaN(startDate.getTime()) || isNaN(daysCount)) {
-        alert("Por favor, ingresa una fecha y una cantidad de días válidas.");
-        return;
+    const startDateInput = document.getElement
