@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 300px; /* Se redujo el ancho del contenedor */
     margin: auto;
     background: white;
     padding: 20px;
@@ -31,7 +31,12 @@ input.narrow, select.narrow {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; /* Cambiado para ser más estrecho */
+    width: 100%; /* Mantener el 100% de ancho */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre botones */
 }
 
 button.small-button {
@@ -42,6 +47,7 @@ button.small-button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    flex: 1; /* Asegura que los botones sean del mismo tamaño */
 }
 
 button.small-button:hover {
