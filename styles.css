@@ -27,11 +27,11 @@ label {
 }
 
 input.narrow, select.narrow {
-    padding: 10px;
+    padding: 6px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
-    width: 100%; /* Mantener el 100% de ancho */
+    width: 85%; 
 }
 
 .button-container {
