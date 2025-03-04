@@ -1,20 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ecef; /* Un gris claro para un fondo más suave */
     padding: 20px;
 }
 
 .container {
-    max-width: 300px; /* Se redujo el ancho del contenedor */
+    max-width: 320px; /* Aumento ligero del ancho del contenedor */
     margin: auto;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 25px; /* Aumento del padding para un mejor espaciado */
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
 }
 
 h1 {
     text-align: center;
+    color: #333; /* Color de texto más oscuro para el título */
 }
 
 form {
@@ -24,30 +25,39 @@ form {
 
 label {
     margin: 10px 0 5px;
+    font-weight: bold; /* Hacer que la etiqueta sea más prominente */
+    color: #555; /* Color de texto para las etiquetas */
 }
 
 input.narrow, select.narrow {
-    padding: 6px;
+    padding: 8px; /* Incremento en el padding para más comodidad */
     margin-bottom: 15px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    width: 85%; 
+    width: 90%; /* Ligera expansión del ancho */
+    transition: border-color 0.3s; /* Transición suave para el enfoque */
+}
+
+input.narrow:focus, select.narrow:focus {
+    border-color: #28a745; /* Resaltar el borde en el enfoque */
+    outline: none; /* Sin contorno adicional */
 }
 
 .button-container {
     display: flex;
-    justify-content: space-between; /* Espacio entre botones */
+    justify-content: space-between;
 }
 
 button.small-button {
-    padding: 5px; /* Botones más pequeños */
-    margin: 5px; /* Más separación entre botones */
+    padding: 8px; /* Botones más grandes para mejor usabilidad */
+    margin: 5px; /* Espacio constante entre botones */
     background: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    flex: 1; /* Asegura que los botones sean del mismo tamaño */
+    flex: 1;
+    transition: background 0.3s; /* Transición suave para el color de fondo */
 }
 
 button.small-button:hover {
@@ -58,15 +68,21 @@ button.red-button {
     background: #dc3545; /* Color rojo para el botón de limpiar */
 }
 
+button.red-button:hover {
+    background: #c82333; /* Cambio de color en hover */
+}
+
 #result {
     margin-top: 20px;
     font-size: 1.2em;
+    color: #333; /* Color del texto del resultado */
 }
 
 #final-date {
-    font-weight: normal; /* Asegúrate que la fecha final tenga un peso normal */
+    font-weight: normal; 
+    color: #666; /* Color más suave para la fecha final */
 }
 
 strong {
     font-weight: bold; /* Negrita para los nombres de campos */
-}
+    color
