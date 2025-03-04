@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Días Hábiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Días Hábiles</h1>
+        <form id="days-form">
+            <label for="start-date">Fecha Inicial (dd/mm/año):</label>
+            <input type="text" id="start-date" placeholder="dd/mm/aaaa" required>
+
+            <label for="jurisdiction">Fueros:</label>
+            <select id="jurisdiction" required>
+                <option value="PENAL" style="color: red;">PENAL</option>
+                <option value="CIVIL" style="color: blue;">CIVIL</option>
+                <option value="COMERCIAL" style="color: green;">COMERCIAL</option>
+                <option value="LABORAL" style="color: orange;">LABORAL</option>
+                <option value="CONTENCIOSO ADMINISTRATIVO" style="color: purple;">CONTENCIOSO ADMINISTRATIVO</option>
+                <option value="OTRO" style="color: brown;">OTRO</option>
+            </select>
+
+            <label for="days-count">Cantidad de Días:</label>
+            <input type="number" id="days-count" min="1" required>
+
+            <button type="button" id="calculate">Calcular Fecha</button>
+            <button type="button" id="clear">Limpiar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
