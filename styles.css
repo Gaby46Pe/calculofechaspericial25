@@ -26,15 +26,17 @@ label {
     margin: 10px 0 5px;
 }
 
-input, select {
+input.narrow, select.narrow {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%; /* Cambiado para ser más estrecho */
 }
 
-button {
-    padding: 10px;
+button.small-button {
+    padding: 5px; /* Botones más pequeños */
+    margin: 5px; /* Más separación entre botones */
     background: #28a745;
     color: white;
     border: none;
@@ -42,11 +44,23 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button.small-button:hover {
     background: #218838;
+}
+
+button.red-button {
+    background: #dc3545; /* Color rojo para el botón de limpiar */
 }
 
 #result {
     margin-top: 20px;
     font-size: 1.2em;
+}
+
+#final-date {
+    font-weight: normal; /* Asegúrate que la fecha final tenga un peso normal */
+}
+
+strong {
+    font-weight: bold; /* Negrita para los nombres de campos */
 }
